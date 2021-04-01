@@ -13,7 +13,12 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
     }
-
+    
+    @IBAction func cameraButtonClick(_ sender: Any) {
+        let vc = self.storyboard?.instantiateViewController(withIdentifier: "CamViewController") as! CamViewController
+        self.navigationController?.pushViewController(vc, animated: false)
+    }
+    
 
 }
 

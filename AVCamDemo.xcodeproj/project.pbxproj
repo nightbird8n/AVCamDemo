@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -13,6 +13,7 @@
 		84AD5D332615C9DE004032C1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84AD5D312615C9DE004032C1 /* Main.storyboard */; };
 		84AD5D352615C9DE004032C1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 84AD5D342615C9DE004032C1 /* Assets.xcassets */; };
 		84AD5D382615C9DE004032C1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84AD5D362615C9DE004032C1 /* LaunchScreen.storyboard */; };
+		84AD5D452615DCDD004032C1 /* CamViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84AD5D442615DCDD004032C1 /* CamViewController.swift */; };
 		DAC02EAA9BCC305673B87C26 /* Pods_AVCamDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E38DA37778BF760C5B1839B6 /* Pods_AVCamDemo.framework */; };
 /* End PBXBuildFile section */
 
@@ -26,6 +27,7 @@
 		84AD5D342615C9DE004032C1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		84AD5D372615C9DE004032C1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		84AD5D392615C9DE004032C1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		84AD5D442615DCDD004032C1 /* CamViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CamViewController.swift; sourceTree = "<group>"; };
 		DEFACF5AEC76E56F6743606E /* Pods-AVCamDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AVCamDemo.debug.xcconfig"; path = "Target Support Files/Pods-AVCamDemo/Pods-AVCamDemo.debug.xcconfig"; sourceTree = "<group>"; };
 		E38DA37778BF760C5B1839B6 /* Pods_AVCamDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AVCamDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -70,6 +72,7 @@
 				84AD5D342615C9DE004032C1 /* Assets.xcassets */,
 				84AD5D362615C9DE004032C1 /* LaunchScreen.storyboard */,
 				84AD5D392615C9DE004032C1 /* Info.plist */,
+				84AD5D442615DCDD004032C1 /* CamViewController.swift */,
 			);
 			path = AVCamDemo;
 			sourceTree = "<group>";
@@ -88,7 +91,6 @@
 				DEFACF5AEC76E56F6743606E /* Pods-AVCamDemo.debug.xcconfig */,
 				45765556605883EA0E1FD0DF /* Pods-AVCamDemo.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -208,6 +210,7 @@
 			files = (
 				84AD5D302615C9DE004032C1 /* ViewController.swift in Sources */,
 				84AD5D2C2615C9DE004032C1 /* AppDelegate.swift in Sources */,
+				84AD5D452615DCDD004032C1 /* CamViewController.swift in Sources */,
 				84AD5D2E2615C9DE004032C1 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -359,6 +362,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 476D2DY9H7;
 				INFOPLIST_FILE = AVCamDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -379,6 +383,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 476D2DY9H7;
 				INFOPLIST_FILE = AVCamDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
