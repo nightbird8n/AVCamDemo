@@ -46,9 +46,36 @@
                     <view key="view" contentMode="scaleToFill" id="dEf-OR-tcJ">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="b6g-0q-rYY">
+                                <rect key="frame" x="32" y="758" width="350" height="60"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2mx-oh-Gne">
+                                        <rect key="frame" x="320" y="13" width="30" height="34"/>
+                                        <connections>
+                                            <action selector="switchButtonClick:" destination="LKg-sU-bXB" eventType="touchUpInside" id="dun-5P-y2C"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="2mx-oh-Gne" firstAttribute="centerY" secondItem="b6g-0q-rYY" secondAttribute="centerY" id="1De-2G-ejA"/>
+                                    <constraint firstAttribute="height" constant="60" id="X6T-Si-3Og"/>
+                                    <constraint firstAttribute="trailing" secondItem="2mx-oh-Gne" secondAttribute="trailing" id="qJK-WU-u2d"/>
+                                </constraints>
+                            </view>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="WSb-R1-9fd"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="b6g-0q-rYY" firstAttribute="leading" secondItem="WSb-R1-9fd" secondAttribute="leading" constant="32" id="GWR-eR-urT"/>
+                            <constraint firstItem="WSb-R1-9fd" firstAttribute="bottom" secondItem="b6g-0q-rYY" secondAttribute="bottom" constant="44" id="fug-n8-z0K"/>
+                            <constraint firstItem="WSb-R1-9fd" firstAttribute="trailing" secondItem="b6g-0q-rYY" secondAttribute="trailing" constant="32" id="iZj-z0-EB7"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="switchButton" destination="2mx-oh-Gne" id="GKV-cc-OlX"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nE4-Gd-g9a" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
