@@ -6,6 +6,6 @@ target 'AVCamDemo' do
   use_frameworks!
 
   # Pods for AVCamDemo
-  pod "SwiftyCam"
+  # pod "SwiftyCam"
 
 end

@@ -6,7 +6,6 @@
 //
 
 import UIKit
-import SwiftyCam
 
 class CamViewController: SwiftyCamViewController {
 
